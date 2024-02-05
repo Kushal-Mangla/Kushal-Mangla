@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="9.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Kushal Mangla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+</head>
+<style>
+    .Hello, .name {
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .Hello:hover, .name:hover {
+        transform: scale(1.1);
+    }
+    .name {
+        color: #c60c0c; 
+        padding: 2px; 
+    }
+    nav ul li a {
+        position: relative;
+        text-decoration: none;
+        color: #f2ecec; 
+    }
+    
+    nav ul li a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ffffff; 
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    nav ul li a:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    .s
+    {
+        display: flex;
+        justify-content: center;
+        gap:10px;
+    }
+    [id]:before {
+        content: "";
+        display: block;
+        height: 80px; 
+        margin-top: -80px; 
+        visibility: hidden;
+    }
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#45">About</a></li>
+            <li><a href="#46">Education</a></li>
+            
+            <li class="dropdown">
+                <a href="#" >Mode</a>
+
+                <div class="dropdown-content">
+                    <a href="#" id="light-mode">Light Mode</a>
+                    <a href="#" id="dark-mode">Dark Mode</a>
+                </div>
+            </li>
+            <li><a href="#48">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li id="hid"><a href="#47">Achievements</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <div class="flex_img" id="45">
+        <section id="about">
+            <p class="Hello animate__animated animate__fadeInRight" >Hello there!</p> 
+
+            <p class="p_about">
+                <span class="animate__animated animate__fadeInUp animate__delay-1s">I am</span>
+                <span class="name animate__animated animate__fadeInUp animate__delay-2s">Kushal Mangla</span> , currently pursuing my Bachelor's degree in Computer Science and Engineering at
+                the International Institute of Information Technology, Hyderabad (IIITH). As a passionate and dedicated student
+                in the field of technology, I find immense joy in exploring the vast realm of computer science.
+            </p>
+            <br>
+            <br>
+            <a href="Resume.pdf" download class="cta-button">Download CV</a>
+            <a href="#contact" class="cta-button">Contact Me</a>
+            <a href="#47" class="cta-button">Achievements</a>
+
+        </section>
+        <img src="profile.jpeg" alt="" class="img_kushal">
+    </div>
+    <!-- Education Section -->
+    <div id="46">
+    <section id="education"> 
+        <p class="education_heading animate__animated animate__fadeInLeft">Education background section</p>
+        <ol class="roboto animate__animated animate__fadeInRight animate__slow">
+            <li id="1">I completed my 10th-grade education at St. Xavier's School in Bathinda, where I laid the foundation for
+                my academic pursuits. </li>
+                <br>
+            <li >Seeking excellence in my chosen field, I pursued coaching for my 11th and 12th
+                grades at Allen Kota in Rajasthan, a renowned institute known for its academic rigor and competitive
+                exam preparation.</li>
+                <br>
+            <li id="2">For my 12th-grade studies, I transitioned to Disha Delphi School in Rajasthan. This phase not only
+                strengthened my academic foundation but also provided a platform for holistic development, preparing me
+                for the challenges and opportunities that lay ahead.</li>
+                <br>
+            <li id="3">Now, as a dedicated student at IIITH, I am channeling my passion for computer science into practical
+                knowledge and skills. </li>
+                <br>
+            <li>    The diverse educational experiences have shaped my approach to learning, combining
+                the discipline instilled by St. Xavier's, the competitive edge from Allen Kota, and the comprehensive
+                education at Disha Delphi School.</li>
+        </ol>
+    </section>
+</div>
+
+
+    <!-- Achievements Section -->
+    <div id="47">
+    <section id="achievements">
+        <div>
+            <p class="achievement_heading animate__animated animate__fadeInLeftBig">Achievements section</p>
+            <ol class="roboto animate__animated animate__fadeInRight animate__slow">
+                <li>Earning a commendable rank of 966 in the Joint Entrance Examination (JEE) after dedicated
+                    preparation at Allen Kota in Rajasthan highlights my commitment to achieving academic excellence.
+                </li>
+                <br>
+                <li>Successfully navigating through the National Talent Search Examination (NTSE) Stage 1 underscored my
+                    aptitude for academic brilliance and my proficiency in problem-solving.</li>
+                    <br>
+                <li>Consistently securing an impressive 96% in both 10th and 12th-grade board exams showcases my
+                    dedication to maintaining high academic standards across different educational stages.</li>
+                    <br>
+                <li>Excelling in the Pre-Regional Mathematical Olympiad (PRMO) demonstrated my prowess in mathematics
+                    and my ability to approach complex problems with analytical thinking.</li>
+            </ol>
+        </div>
+        <div class="roboto">
+            <p id="olympiad" class="animate__animated animate__bounceInRight animate__slow">Olympiad Success:</p>
+
+            Attaining the 9th international rank in the OGO Olympiad and securing the international rank 2 in the SOF
+            Math Olympiad underscore my commitment to mastering mathematical concepts at a global standard.
+        </div>
+        <div class="roboto animate__animated animate__fadeInUp animate__delay-2s">
+            <p id="state" class="animate__animated animate__fadeInBottomLeft animate__slow">State-Level Recognition:</p>
+
+            Being recognized as the state topper in the National Science Talent Search Examination (NSTSE) and the
+            Unified International Mathematics Olympiad (UIMO) highlights my academic prowess and excellence at the state
+            level.
+        </div>
+        <br>
+    </section>
+</div>
+    <!-- slide show -->
+    <div class="slideshow-container">
+        <div>
+            <img src="1.jpg" alt="Achievement 1">
+        </div>
+        <div>
+            <img src="2.jpg" alt="Achievement 2">
+        </div>
+        <div>
+            <img src="3.jpg" alt="Achievement 3">
+        </div>
+        <div>
+            <img src="4.jpg" alt="Achievement 3">
+        </div>
+        <div>
+            <img src="5.jpg" alt="Achievement 3">
+        </div>
+        
+    </div>
+
+    <!-- Navigation buttons outside the slideshow container -->
+    <div class="s">
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+    </div>
+    
+    <!-- Skills Section -->
+    <div id="48">
+    <section id="skills"> 
+        <p class="skill_heading animate__animated animate__fadeInRight animate__delay-2s">Skills section</p>
+        <ol class="roboto animate__animated animate__fadeInDown animate__delay-3s">
+            <li>Solid understanding and practical application of key data structures and algorithms.</li>
+            <br>
+            <li>Proficient in creating responsive and visually appealing user interfaces using HTML, CSS, and
+                JavaScript.</li>
+                <br>
+            <li>Collaborative team player with the ability to contribute effectively to group projects.</li>
+            <br>
+            <li>Proven ability to approach challenges analytically and devise innovative solutions.</li>
+            <br>
+            <li>Strong verbal and written communication skills, enabling effective interaction with team members and
+                stakeholders.</li>
+                <br>
+            <li>Demonstrated consistency in performance and dedication, maintaining high standards over time.</li>
+            <br>
+            <li>Quick learner with the ability to adapt to new technologies and dynamic work environments.</li>
+        </ol>
+    </section>
+</div>
+
+    <section id="blog">
+        <h1 class="bg">My blogs</h1>
+        <a href="blog1.html" target="_blank" rel="noopener noreferrer">Adapting to Change: Embracing New Technologies in the Ever-Evolving Tech Industry</a>
+        <br>
+        <a href="blog2.html" target="_blank" rel="noopener noreferrer">Exploring the Future: Innovations Shaping Tomorrow's Technology</a>
+    </section>
+
+    <section id="contact">
+        <h1 class="con">Contact Me</h1>
+        <div class="social-icons ">
+            <a href="https://www.instagram.com/kushalmangla/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kushal-mangla-a454ab274/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Kushal-Mangla" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100095392324977" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </section>
+    
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slideshow-container').slick({
+                dots: true, 
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                prevArrow: $('.prev'),
+                nextArrow: $('.next')
+            });
+        });
+    </script>
+
+</html>
