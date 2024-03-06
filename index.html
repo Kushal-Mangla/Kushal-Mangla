@@ -22,56 +22,41 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 <style>
-    .Hello, .name {
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease-in-out;
-    }
+/* .slick-dots {
+    position: absolute;
+    bottom: 10px; 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+} */
 
-    .Hello:hover, .name:hover {
-        transform: scale(1.1);
-    }
-    .name {
-        color: #c60c0c; 
-        padding: 2px; 
-    }
-    nav ul li a {
-        position: relative;
-        text-decoration: none;
-        color: #f2ecec; 
-    }
-    
-    nav ul li a::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #ffffff; 
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.5s ease-in-out;
-    }
-    
-    nav ul li a:hover::before {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-    
-    .s
-    {
-        display: flex;
-        justify-content: center;
-        gap:10px;
-    }
-    [id]:before {
-        content: "";
-        display: block;
-        height: 80px; 
-        margin-top: -80px; 
-        visibility: hidden;
-    }
-    
+.slick-dots li {
+    margin: 0 5px; /* Adjust the distance between dots as needed */
+}
+
+.slick-dots li button {
+    padding: 2px;
+    /*font-size: 0px; /* Adjust the font size as needed */
+    color: #808080;
+    border: 0.5px solid #949292;; /* Adjust the border color of the inactive dots */
+    background-color: transparent; /* Adjust the background color of the inactive dots */
+    border-radius: 50%;
+    width: 1px; /* Adjust the width of the dots */
+    height: 1px; /* Adjust the height of the dots */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    transform: scale(1.1);
+}
+.slick-dots li button :hover{
+    transform: scale(1.5);
+}
+.slick-dots li.slick-active button {
+    background-color: #615f5f; /* Background color of the active dot */
+    color: #3f3d3d; /* Color of the active dot */
+}
 
 </style>
 <body>

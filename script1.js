@@ -33,7 +33,7 @@ function addComment(blogId) {
             likeComment(likeBtn);
         };
 
-        newComment.appendChild(likeBtn);
+        // newComment.appendChild(likeBtn);
         commentList.appendChild(newComment);
 
         comments.push(commentInput.value);
@@ -66,7 +66,7 @@ function displayComments(blogId) {
             likeComment(likeBtn);
         };
 
-        comment.appendChild(likeBtn);
+        // comment.appendChild(likeBtn);
         commentList.appendChild(comment);
     });
 }
@@ -75,3 +75,8 @@ function getComments(blogId) {
     var commentsString = localStorage.getItem("comments_" + blogId);
     return JSON.parse(commentsString) || [];
 }
+
+// JSON.parse(commentsString): This line uses the JSON.parse function to convert the 
+// retrieved string (which should be in JSON format) into a JavaScript array. JSON (JavaScript Object Notation) 
+// is a lightweight data interchange format that is easy for humans to read and write 
+// and easy for machines to parse and generate.
